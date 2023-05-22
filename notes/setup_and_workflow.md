@@ -5,7 +5,7 @@ I might not follow the toolset of the course exactly and sometimes use or want t
 ## Tools
 
 - The course is taught in Linux and mainly uses the command line to install Docker and other tools. I am following it on a Windows 11 machine and used WSL 2 with Ubuntu 22.04.2 LTS to install [Docker Desktop](https://docs.docker.com/desktop/install/windows-install/).
--  The course also shows how to setup and run your code and other services on a remote EC2 instance by setting up a `t2.xlarge` instance. I think a reasonably modern laptop suffices to run the code and services locally, we'll see as the course progresses.
+- The course also shows how to setup and run your code and other services on a remote EC2 instance by setting up a `t2.xlarge` instance. I think a reasonably modern laptop suffices to run the code and services locally, we'll see as the course progresses.
 - IDE: VSCode, version 1.78.2
   - Has a neat Jupyter Notebook integration, Pycharm only provides this in the professional version.
   - GitLens extension to keep the workflow clean. Also, I prefer using a visual interface rather than the command line sometimes.
@@ -66,6 +66,7 @@ In VSCode, there are multiple ways you can set up and select your kernel:
   The added benefit of selecting the Python Interpreter is that you now also are able to run regular Python scripts in VSCode using the same virtual environment.
 
 - `Jupyter Kernel` - Supports multiple languages and useful if you want to set up custom kernel specifications. In your virtual environment, you can make the kernel detectable using `ipykernel`. There are multiple places you can install the kernel spec into:
+
   - Locally, in your virtual environment: `python -m ipykernel install --sys-prefix`
   - User profile: `python -m ipykernel install --user`
   - System-wide: `python -m ipykernel install`
@@ -73,3 +74,8 @@ In VSCode, there are multiple ways you can set up and select your kernel:
 - `Existing Jupyter Server` - connect to an existing Jupyter server running remotely or locally. You need to set up the server manually.
 
 I prefer to use the `Python Environments` option, as you will have a Kernel Specification that is specific to your virtual environment, always under `.venv/share/jupyter/python3`. Thus, you don't have to worry about knowing `ipykernel` CLI commands to install the kernel spec into the correct folder and selecting the correct kernel spec when you open a notebook in VSCode.
+
+Sources used to learn about kernels:
+
+- [Kernels (Architecture)](https://github.com/microsoft/vscode-jupyter/wiki/Kernels-(Architecture))
+- [IPython kernel docs](https://ipython.readthedocs.io/en/stable/install/kernel_install.html)
