@@ -63,6 +63,8 @@ In VSCode, there are multiple ways you can set up and select your kernel:
   
   Click `Enter interpreter path...`, either paste the path to your Python Executable or use `Find...` to locate it (executable can be found under `.venv/Scripts/python.exe` in Windows or `.venv/bin/python.exe` in Unix).
 
+  Reload VSCode (`Ctrl + Shift+ P` > `Developer: Reload Window`) and you should be able to select the Python Interpreter in the `Python Environments` option, if it not already preloads it by itself.
+
   The added benefit of selecting the Python Interpreter is that you now also are able to run regular Python scripts in VSCode using the same virtual environment.
 
 - `Jupyter Kernel` - Supports multiple languages and useful if you want to set up custom kernel specifications. In your virtual environment, you can make the kernel detectable using `ipykernel`. There are multiple places you can install the kernel spec into:
