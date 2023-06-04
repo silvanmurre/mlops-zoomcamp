@@ -1,9 +1,9 @@
-mlflow
-jupyter
-scikit-learn
-pandas
-seaborn
-hyperopt
-xgboost
-fastparquet
 boto3
+fastparquet
+hyperopt
+jupyter
+mlflow
+pandas
+scikit-learn
+seaborn
+xgboost
