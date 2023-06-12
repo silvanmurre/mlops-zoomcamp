@@ -7,3 +7,7 @@ deployments:
   entrypoint: 03-orchestration/3.5/orchestrate_s3.py:main_flow_s3
   work_pool:
     name: zoompool
+- name: homework_q3
+  entrypoint: cohorts/2023/03-orchestration/orchestrate.py:main_flow_hw
+  work_pool:
+    name: zoompool
