@@ -115,6 +115,8 @@ What is the name of the pre-built prefect-email task function?
 ☐ `send_email`  
 ☐ `send_message`
 
+### Answer steps
+
 1. Follow instructions: [App Password](https://support.google.com/accounts/answer/185833)
 2. Create [q5_create_emails_block.py](https://github.com/silvanmurre/mlops-zoomcamp/blob/main/cohorts/2023/03-orchestration/q5_create_emails_block.py)
 3. Create `.env` file in root, add:
@@ -128,10 +130,10 @@ What is the name of the pre-built prefect-email task function?
 4. Create [q5_send_email.py](https://github.com/silvanmurre/mlops-zoomcamp/blob/main/cohorts/2023/03-orchestration/q5_send_email.py)
 5. Add flow deployment steps to [deployment.yaml](https://github.com/silvanmurre/mlops-zoomcamp/blob/main/deployment.yaml)
 6. Push code to GitHub, is there a way not having to push code to GitHub each time you want to each time you want to deploy a flow?
-7. Deploy flow from step 4:
+7. Deploy:
    
    ```
-   prefect deploy cohorts/2023/03-orchestration/q5_send_email.py:send_email -n homework_q5 -p zoompool
+   prefect deploy -n q5
    ```
 
 
@@ -155,7 +157,7 @@ What is the name of the second step in the Automation creation process?
 
 ☐ Details  
 ☐ Trigger  
-☐ Actions  
+☑ Actions  
 ☐ The end
 
 
