@@ -7,11 +7,15 @@ deployments:
   entrypoint: 03-orchestration/3.5/orchestrate_s3.py:main_flow_s3
   work_pool:
     name: zoompool
-- name: homework_q3
-  entrypoint: cohorts/2023/03-orchestration/orchestrate.py:main_flow_hw_q3
+- name: q3
+  entrypoint: cohorts/2023/03-orchestration/q3_orchestrate.py:main_flow_hw_m3_q3
   work_pool:
     name: zoompool
-- name: homework_q4
-  entrypoint: cohorts/2023/03-orchestration/orchestrate.py:main_flow_hw_q4
+- name: q4
+  entrypoint: cohorts/2023/03-orchestration/q4_orchestrate.py:main_flow_hw_m3_q4
+  work_pool:
+    name: zoompool
+- name: q5
+  entrypoint: cohorts/2023/03-orchestration/q5_send_email.py:send_email_hw_m3_q5
   work_pool:
     name: zoompool
